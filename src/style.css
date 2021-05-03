@@ -313,7 +313,6 @@ button {
     padding: 10px;
     position: absolute;
     top: -320px;
-    left: -50%;
     transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -437,7 +436,13 @@ button {
 }
 
 @media (max-width: 780px) {
-    .nav ul {
+    /*.nav {
+        height: 82px;
+    }*/
+    .nav {
+        display: none;
+    }
+    .nav ul{
         display: none;
     }
 
@@ -523,4 +528,44 @@ button {
     }
 }
 
+@supports not (gap: 1px) {
+    .nav ul li {
+        margin: 0 1px;
+    }
+    .nav ul li:last-child {
+        margin-right: 0;
+    }
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+}
+
+@supports not (gap: 7px) {
+    .social li {
+        margin: 0 7px;
+    }
+    .social li:last-child {
+        margin-right: 0;
+    }
+    .social li:first-child {
+        margin-left: 0;
+    }
+}
+@supports not (gap: 2px) {
+    .menu a {
+        margin: 2px 0;
+    }
+    .menu a:last-child {
+        margin-bottom: 0;
+    }
+    .menu a:first-child {
+        margin-top: 0;
+    }
+}
+
+@supports not (gap: 30px) {
+    .ach #pro1 {
+        margin-bottom: 30px;
+    }
+}
 
