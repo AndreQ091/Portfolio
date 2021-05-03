@@ -79,7 +79,8 @@ html, body {
 
 .about {
     background-color: lightblue;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
